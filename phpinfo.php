@@ -1,6 +1,0 @@
-<?php
-
-/*
-  zongmuli
-*/
-phpinfo();
