@@ -1,0 +1,19 @@
+<!-- 加载头部文件 -->
+<include file="Public/header" />
+<link href="__PUBLIC__/Static/css/signin.css" rel="stylesheet">
+<!-- -->
+<body class="text-center">
+	<form class="form-signin" action="{:U('Admin/user/user')}" method="post">
+	  <img class="mb-4" src="__PUBLIC__/Static/img/my_logo.png" alt="" width="214" height="77">
+	  <label for="inputEmail" class="sr-only">UserName or Email address</label>
+	  <input type="email" id="inputEmail" class="form-control" name="username" placeholder="UserName or Email address" required autofocus>
+	  <label for="inputPassword" class="sr-only">Password</label>
+	  <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
+
+	  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+	  <button class="btn btn-lg btn-secondary btn-block" type="submit">Retrieve password</button>
+	  <button class="btn btn-lg btn-secondary btn-block" type="submit">Sign up</button>
+
+	</form>
+<!-- 加载尾部文件 -->
+<include file="Public/footer" />
