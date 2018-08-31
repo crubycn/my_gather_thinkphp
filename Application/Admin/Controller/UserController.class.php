@@ -21,7 +21,7 @@ class UserController extends Controller{
 	 * 
 	 */
 	public function user(){
-    	$a = "string_user";
+    	$a = $_POST['username'];
     	$this->assign('a',$a);
     	$this->display();
     }
