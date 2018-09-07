@@ -5,7 +5,6 @@
 	<title>Document</title>
 </head>
 <body>
-<h1>会是怎样的结果呢？</h1>
-<h2><?php echo ($a); ?></h2>
+<h2><?php echo ($username); ?></h2>
 </body>
 </html>

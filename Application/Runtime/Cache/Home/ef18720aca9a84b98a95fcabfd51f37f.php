@@ -12,34 +12,26 @@
 	<link href="/my_gather_thinkphp/Public/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet">
  	
  </head>
-<link href="/my_gather_thinkphp/Public/Static/css/signin.css" rel="stylesheet">
+<link href="/my_gather_thinkphp/Public/Static/css/signin_reg.css" rel="stylesheet">
 <!-- -->
 <body class="text-center">
-	<form class="form-signin" action="<?php echo U('Home/user/user');?>" method="post">
+	<form class="form-signin" action="" method="post">
 	  <img class="mb-4" src="/my_gather_thinkphp/Public/Static/img/my_logo.png" alt="" width="214" height="77">
+
 	  <label for="inputEmail" class="sr-only">Email address</label>
 	  <input type="email" id="inputEmail" class="form-control" name="user_email" placeholder="Email address" required autofocus>
-	  <label for="inputPassword" class="sr-only">Password</label>
-	  <input type="password" id="inputPassword" class="form-control" name="password" placeholder="Password" required>
 
-	  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
-	  <button class="btn btn-lg btn-secondary btn-block" type="button" id="Retrieve">Retrieve password</button>
-	  <button class="btn btn-lg btn-secondary btn-block" type="button" id="Sign">Sign up</button>
+	  <button class="btn btn-lg btn-primary btn-block"  id="Retrieve password">Retrieve</button>
+	  <button class="btn btn-lg btn-secondary btn-block" type="button" id="goBack">GO Back</button>
 
 	</form>
-<!-- 加载尾部文件 -->
+
 	<script>
 		$(function(){
-			//找回密码
-			$('#Retrieve').click(function(){	//window.open("");
-				location.href = "<?php echo U('Home/user/retrieve');?>";
-			 });
-
-			//注册账号
-			$('#Sign').click(function(){
-				location.href = "<?php echo U('Home/user/reg');?>";
+			$('#goBack').click(function(){
+				location.href = "<?php echo U('Home/index/index');?>";
 			 });
 		})
 	</script>
- </body>
- </html>
+</body>
+</html>
